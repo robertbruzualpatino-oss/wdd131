@@ -1,0 +1,74 @@
+:root {
+    --primary-color: #2563eb;
+    --accent-color: #f59e0b;
+    --bg-color: #f8fafc;
+    --text-color: #1e293b;
+    --card-bg: #ffffff;
+    --transition: all 0.3s ease; 
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--bg-color);
+    font-weight: 400;
+    color: var(--text-color);
+    margin: 0;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    text-align: center;
+}
+
+header span {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    background-color: var(--primary-color);
+}
+
+nav a {
+    display: block;
+    padding:  15px 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: var(--accent-color);
+    box-shadow: inset 0 -4px 0 var(--accent-color);
+}
+
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: var(--card-bg);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid var(--primary-color);
+}
