@@ -49,10 +49,9 @@ header h1 {
 
 nav ul {
     list-style: none;
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 0.5rem;
-    display: none;
 }
 
 nav ul.open {
