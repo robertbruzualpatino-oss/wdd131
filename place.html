@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Page - PLace Spotlight</title>
+    <meta name="description" content="Dedicated page showcasing specific country data, weather, and highlights for WDD131.">
+    <meta name="author" content="Robert Bruzual">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="icon" href="data:,">
+</head>
+<body>
+    <header>
+        <h1>Explore New York City</h1>
+    </header>
+
+    <main>
+        <div class="hero-container">
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/hero-small (2).webp">
+                <source media="(min-width: 601px)" srcset="images/hero-large (1).webp">
+                <img src="images/hero-large (1).webp" alt="Wonderful view of the New York City Skyline, including the New World Trade Center." loading="lazy" width="1200" height="600">
+            </picture>
+        </div>
+
+        <section class="data-card section-data">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area:</strong> 1,223.59 km²</li>
+                <li><strong>Population:</strong> 8,804,190</li>
+                <li><strong>Capital:</strong> Albany (State)</li>
+                <li><strong>Language:</strong> English</li>
+                <li><strong>Currency:</strong> USD ($)</li>
+            </ul>
+        </section>
+
+        <section class="data-card section-weather">
+            <h2 class="weather-heading">Weather <img src="images/weather-icon.svg" alt="Weather icon" class="mobile-weather-icon"></h2>
+            <ul>
+                <li><strong>Temperature:</strong> <span id="temp">27</span>°C</li>
+                <li><strong>Condition:</strong> Sunny</li>
+                <li><strong>Wind:</strong> <span id="wind">21</span> km/h</li>
+                <li><strong>Wind Chill:</strong> <span id="windchill"></span></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Place Page Assignment | Robert Bruzual</p>
+        <p class="last-modified">Last Modified: <span id="lastmodified"></span></p>
+    </footer>
+</body>
+</html>
