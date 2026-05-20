@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #2563eb;
+    --primary-color: #1e40af;
     --accent-color: #f59e0b;
     --bg-color: #f8fafc;
     --text-color: #1e293b;
@@ -19,8 +19,8 @@ body {
 }
 
 h1, h2 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 100;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
     text-align: center;
 }
 
@@ -34,6 +34,7 @@ header span {
 
 nav ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     list-style: none;
     padding: 0;
@@ -51,8 +52,8 @@ nav a {
 }
 
 nav a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    color: var(--accent-color);
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
     box-shadow: inset 0 -4px 0 var(--accent-color);
 }
 
@@ -63,10 +64,36 @@ header {
 }
 
 main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1rem;
+    gap: 25px;
+    margin-top: 2rem;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid #ddd;
     padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.cse-card {
+    border: 2px solid #0066cc;
+    background-color: #f0f7ff;
+}
+
+.assignment-list {
+    list-style-type: square;
+    padding-left: 20px;
+    text-align: left;
 }
 
 footer {
@@ -76,17 +103,4 @@ footer {
     text-align: center;
     margin-top: 2rem;
     color: var(--text-color);
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
-}
-
-.card {
-    border: 1px solid #ddd;
-    padding: 1rem;
-    text-align: center;
-    border-radius: 8px;
 }
