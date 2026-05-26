@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtered Temples Gallery</title>
+    <meta name="description" content="A beautiful collection and gallery of historic and modern temples.">
+    <meta name="author" content="Robert Gabriel Bruzual Patiño">
+    <link rel="stylesheet" href="styles/filtered-temples.css" media="(min-width: 32rem)">
+    <script src="scripts/filtered-temples.js" defer></script>
+    <link rel="icon" href="data:,">
+</head>
+
+
+<body>
+    <header>
+        <h1>Filtered Temples Gallery</h1>
+        <nav>
+            <button id="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+            <ul id="nav-menu">
+                <li><a href="#" id="filter-home" class="active">Home</a></li>
+                <li><a href="#" id="filter-old">Old</a></li>
+                <li><a href="#" id="filter-new">New</a></li>
+                <li><a href="#" id="filter-large">Large</a></li>
+                <li><a href="#" id="filter-small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 id="gallery-title">Home</h1>
+        <div class="temple-grid" id="temple-container"></div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Robert Gabriel Bruzual Patiño | Cumaná, Venezuela</p>
+        <p class="last-modified">Last Modification: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>
