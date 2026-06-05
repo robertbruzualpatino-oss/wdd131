@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Plan - QuestForge Tales</title>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <style>
+        :root {
+            --primary-color: #00ffff;
+            --secondary-color: #0d0d0d;
+            --accent-color: #ff80df;
+            --text-color: #e0e0e0;
+            --card-bg: #161616;
+        }
+
+        body {
+            font-family: 'Merriweather', Georgia, serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--secondary-color);
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Georgia', serif;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 5px;
+        }
+
+        header {
+            background-color: var(--card-bg);
+            border: 2px solid var(--primary-color);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            border-bottom: none;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            color: var(--accent-color);
+            margin: 5px 0 0 0;
+            font-weight: bold;
+        }
+
+        section {
+            background-color: var(--card-bg);
+            padding: 20px;
+            border-radius: 6px;
+            margin-bottom: 40px;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: linear-gradient(to right, transparent, var(--accent-color), transparent);
+            margin: 30px 0;
+        }
+
+        strong {
+            color: var(--primary-color);
+        }
+
+        .color-palette {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .color-box {
+            flex: 1;
+            min-width: 150px;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+            font-family: monospace;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .wireframe-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .wireframe-box {
+            border: 2px dashed var(--primary-color);
+            padding: 15px;
+            background-color: #050505;
+            border-radius: 5px;
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .wireframe-box h3 {
+            border-bottom: 1px solid var(--accent-color);
+            color: var(--accent-color);
+            margin-top: 0;
+            text-align: center;
+        }
+
+        .wf-element {
+            border: 1px solid var(--text-color);
+            background-color: var(--card-bg);
+            color: var(--primary-color);
+            padding: 10px;
+            margin: 10px 0;
+            text-align: center;
+            font-size: 0.85rem;
+            font-family: monospace;
+        }
+
+        .wf-element span strong {
+            color: var(--primary-color);
+        }
+
+        .wf-grid {
+            display: grid;
+            grid-template-columns: 1.3fr 0.7fr;
+            gap: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .wf-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Website Plan</h1>
+        <p>WDD 131 - Dynamic Web Fundamentals</p>
+    </header>
+
+    <main>
+        <section id="site-name">
+            <h2>Site Name</h2>
+            <h3>[QuestForge Tales]</h3>
+            <p><strong>Why this name was chosen:</strong> I chose this name because it highlights the core mechanic of the site: crafting and embarking on text-based journeys where the player's choices forge the outcome. It sets an adventurous, imaginative tone for users looking to dive into an immersive story.</p>
+        </section>
+
+        <hr>
+
+        <section id="site-purpose">
+            <h2>Site Purpose</h2>
+            <p>The purpose of this website is to provide an immersive, text-based interactive fiction game where users can read a branching narrative and make critical choices that alter the plot. The site aims to deliver an entertaining, nostalgic, and seamless gameplay experience directly in the browser without requiring external downloads.</p>
+        </section>
+
+        <hr>
+
+        <section id="target-audience">
+            <h2>Target Audience & Scenarios</h2>
+            <p>Think about the people visiting your site. Below are at least two strategic questions a typical visitor might expect answered when browsing this website:</p>
+            <ul>
+                <li><strong>Scenario 1:</strong> I only have 10 minutes during my lunch break. Can I easily start playing the game, and will it save my progress or let me restart quickly if I hit a Game Over?</li>
+                <li><strong>Scenario 2:</strong> As a fan of classic tabletop RPGs, does this website offer meaningful choice mechanics (like tracking my character's inventory or health) that impact the story, or is it just a linear path?</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="color-schema">
+            <h2>Color Schema</h2>
+            <p>The following color scheme has been selected to establish the visual brand identity of the project. These exact colors have been applied to style this planning document:</p>
+
+            <div class="color-palette">
+                <div class="color-box" style="background-color: #00ffff; color: #0d0d0d;">
+                    Primary Color<br>#00ffff
+                </div>
+                <div class="color-box" style="background-color: #0d0d0d; color: #00ffff;">
+                    Secondary Color<br>#0d0d0d
+                </div>
+                <div class="color-box" style="background-color: #ff80df; color: #0d0d0d;">
+                    Accent Color<br>#ff80df
+                </div>
+            </div>
+            <p><strong>Usage Plan:</strong> The Primary color is used for headings. The Secondary color serves as a background contrast block. The Accent color highlights key borders and focus points.</p>
+        </section>
+
+        <hr>
+
+        <section id="typography">
+            <h2>Typography</h2>
+            <p>The text layout relies on the following fonts to build structure, hierarchy, and strong readability:</p>
+            <ul>
+                <li><strong>Heading Font:</strong> Georgia - Used for all `h1`, `h2`, and `h3` titles to draw emphasis.</li>
+                <li><strong>Body Font:</strong> Merriweather - Used for all paragraphs, lists, and main readable structural text blocks.</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="wireframes">
+            <h2>Wireframes</h2>
+            <p>This layout blueprint outlines how content blocks will behave on both mobile viewports and desktop viewports.</p>
+
+            <div class="wireframe-container">
+
+                <div class="wireframe-box">
+                    <h3>Mobile Layout View</h3>
+                    <div class="wf-element">
+                        <strong>[Top Bar / Header]</strong><br>
+                        SYS://LOG_04.EXE | SECTOR 7-G | OXYGEN: 94% | [REBOOT_SYS]
+                    </div>
+                    <div class="wf-element">
+                        <strong>[Navigation / System Menu]</strong><br>
+                        [SYS_LOGS] [DIAGNOSTICS] [MUTE_STATIC]
+                    </div>
+                    <div class="wf-element" style="min-height: 50px;">
+                        <strong>[Vitals & Inventory Panel]</strong><br>
+                        VITALS: STABLE | 1x PLASMA CUTTER | 1x DATAPAD
+                    </div>
+                    <div class="wf-element" style="min-height: 80px;">
+                        <strong>[Main Section / Narrative Feed]</strong><br>
+                        Incoming game text stream and room descriptions go here...
+                    </div>
+                    <div class="wf-element">
+                        <strong>[Bottom Section / Choice Matrix]</strong><br>
+                        [F1 > OVERRIDE AIRLOCK] [F2 > VENT RADIANT HEAT]
+                    </div>
+                    <div class="wf-element">
+                        <strong>[Footer]</strong><br>
+                        &copy; 2026 | QuestForge Tales Planning Module
+                    </div>
+                </div>
+
+                <div class="wireframe-box">
+                    <h3>Desktop Layout View</h3>
+                    <div class="wf-element" style="display: flex; justify-content: space-between; align-items: center;">
+                        <span><strong>[Top Bar]</strong> SYS://LOG_04.EXE</span>
+                        <span>SECTOR 7-G | OXYGEN 94%</span>
+                        <span>[REBOOT_SYS]</span>
+                    </div>
+
+                    <div class="wf-grid">
+                        <div>
+                            <div class="wf-element" style="min-height: 120px;">
+                                <strong>[Main Section / Text Display Feed]</strong><br><br>
+                                Primary game console logs, descriptive narrative pacing block, and active scenario text layout area.
+                            </div>
+                            <div class="wf-element">
+                                <strong>[Bottom Section / Choice Command Grid]</strong><br>
+                                [F1 > OVERRIDE AIRLOCK DOORS] &nbsp;&nbsp; [F2 > VENT HEAT]
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="wf-element" style="min-height: 185px;">
+                                <strong>[Sidebar Panel]</strong><br><br>
+                                STATUS: O2 OK<br>
+                                VITALS: STABLE<br>
+                                ------------<br>
+                                CARGO HOLD:<br>
+                                &gt; PLASMA CUTTER<br>
+                                &gt; DATAPAD
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wf-element">
+                        <strong>[Footer]</strong> &copy; 2026 | QuestForge Tales System Metrics
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer style="margin-top: 5px; text-align: center; font-size: 0.9rem; padding: 20px 0;">
+        <p>&copy; 2026 | Website Plan | Robert Bruzual</p>
+    </footer>
+
+</body>
+</html>
