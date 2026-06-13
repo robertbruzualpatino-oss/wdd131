@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuestForge Tales | Terminal</title>
+    <meta name="description" content="Play QuestForge Tales, a text-based interactive sci-fi RPG.">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/main.js" defer></script>
+    <link rel="icon" href="data:,">
+</head>
+<body>
+    <header>
+        <div class="logo">SYS://QUESTFORGE</div>
+        <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html" class="active">TERMINAL</a></li>
+                <li><a href="intel.html">INTEL LOGS</a></li>
+                <li><a href="comms.html">COMMS (CONTACT)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="Terminal-layout">
+        <section>
+            <h1 id="game-title">SECTOR 7-G UPLINK</h1>
+            <div class="status-bar">
+                <span id="oxygen-display">OXYGEN: 100%</span>
+                <span class="blinking-cursor">_</span>
+            </div>
+        </section>
+
+        <div class="game-grid">
+            <section class="main-feed" id="story-display">
+                </section>
+
+            <aside class="sidebar-panel">
+                <h2>INVENTORY</h2>
+                <div id="inventory-display">
+                    </div>
+                <button id="reset-btn" class="sys-btn">REBOOT_SYS</button>
+            </aside>
+        </div>
+
+        <section class="choice-matrix" id="choice-display">
+            </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> | Robert Bruzual | QuestForge Systems</p>
+        <p id="last-modified"></p>
+        <p><a href="references.html">Access References</a></p>
+    </footer>
+</body>
+</html>

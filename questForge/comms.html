@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuestForge Tales | Comms Relay</title>
+    <meta name="description" content="Secure communication relay is transmit signals or inquiries.">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/main.js" defer></script>
+    <link rel="icon" href="data:,">
+</head>
+<body>
+    <header>
+        <div class="logo">SYS://QUESTFORGE</div>
+        <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
+        <nav id="main-nav">
+            <li><a href="index.html">TERMINAL</a></li>
+            <li><a href="intel.html">INTEL LOGS</a></li>
+            <li><a href="comms.html" class="active">COMMS (CONTACT)</a></li>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Secure Comms Relay</h1>
+        <section class="comms-section">
+            <h2>Establish Sub-Space Uplink</h2>
+            <p class="terminal-prompt">Ready to transmit data packet. Ensure your coordinate tags are correct before broad-spectrum broadcast.</p>
+
+            <form action="#" method="POST" class="terminal-form"></form>
+            <div class="form-group">
+                <label for="comms-name">User Designation (Name):</label>
+                <input type="text" id="comms-name" name="name" placeholder="e.g., Asset-404" required>
+            </div>
+
+            <div class="form-group">
+                <label for="comms-email">Return Frequency (Email):</label>
+                <input type="email" id="comms-email" name="email" placeholder="e.g., mode@network.net" required>
+            </div>
+
+            <div class="form-group">
+                <label for="comms-message">Encrypted Transmission (Message):</label>
+                <textarea id="comms-message" name="message" rows="6" placeholder="Type your transmission protocol here..." required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn"> BROADCAST SIGNAL</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-branding">
+                <span class="logo">SYS://QUESTFORGE</span>
+                <p>Designation: Interactive Lore & Intel Database</p>
+            </div>
+
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">Terminal</a></li>
+                    <li><a href="intel.html">Intel Logs</a></li>
+                    <li><a href="comms.html">Comms</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="footer-divider">
+        <div class="footer-bottom">
+            <p>&copy; 2026 QuestForge Tales. Unauthorized data replication is strictly prohibited.</p>
+        </div>
+    </footer>
+</body>
+</html>
